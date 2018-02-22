@@ -6,7 +6,12 @@
 </template>
 
 <script>
+  import StreetFighter from "./StreetFighter.vue"; // nesting our component locally
+
   export default {
+    components: {
+      "street-fighter": StreetFighter
+    },
     data() {
       return {
         title: "Badass App!"
