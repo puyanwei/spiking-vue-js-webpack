@@ -20,5 +20,10 @@
   }
 </script>
 
-<style>
+<style scoped>
+  h1 {
+    color: purple
+  }
+
+  /* will style every element on the page even if it isn't in root, unless you add the scoped attribute into the style app */
 </style>
