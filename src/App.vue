@@ -1,6 +1,7 @@
 <template>
     <div>
       <app-header></app-header>
+      <app-overwatch></app-overwatch>
       <app-footer></app-footer>
     </div>
 </template>
@@ -8,11 +9,13 @@
 <script>
   import Header from "./components/Header.vue"
   import Footer from "./components/Footer.vue"
+  import Overwatch from "./components/Overwatch.vue"
 
   export default {
     components: {
       "app-header": Header,
-      "app-footer": Footer
+      "app-footer": Footer,
+      "app-overwatch": Overwatch
     },
     data() {
       return {}
