@@ -11,16 +11,10 @@
 
 <script>
 export default {
+  props: ["characters"],// receiving prop
   data() {
     return {
-      characters: [
-        { name: "Tracer", ability: "rewind", show: false },
-        { name: "Pharah", ability: "flying", show: false },
-        { name: "Roadhog", ability: "hook", show: false },
-        { name: "Reaper", ability: "shadow", show: false },
-        { name: "Soldier 76", ability: "helix rocket", show: false },
-        { name: "Mercy", ability: "ressurect", show: false }
-      ]
+
     };
   }
 };

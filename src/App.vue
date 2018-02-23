@@ -1,15 +1,15 @@
 <template>
     <div>
       <app-header></app-header>
-      <app-overwatch></app-overwatch>
+      <app-overwatch :characters="characters"></app-overwatch>
       <app-footer></app-footer>
     </div>
 </template>
 
 <script>
-  import Header from "./components/Header.vue"
-  import Footer from "./components/Footer.vue"
-  import Overwatch from "./components/Overwatch.vue"
+  import Header from "./components/Header.vue";
+  import Footer from "./components/Footer.vue";
+  import Overwatch from "./components/Overwatch.vue";
 
   export default {
     components: {
@@ -18,9 +18,41 @@
       "app-overwatch": Overwatch
     },
     data() {
-      return {}
+      return {
+        characters: [{
+            name: "Tracer",
+            ability: "pulse bomb",
+            show: false
+          },
+          {
+            name: "Pharah",
+            ability: "barrage",
+            show: false
+          },
+          {
+            name: "Roadhog",
+            ability: "whole hog",
+            show: false
+          },
+          {
+            name: "Reaper",
+            ability: "death blossem",
+            show: false
+          },
+          {
+            name: "Soldier 76",
+            ability: "tactical visor",
+            show: false
+          },
+          {
+            name: "Mercy",
+            ability: "valkyrie",
+            show: false
+          }
+        ]
+      };
     }
-  }
+  };
 </script>
 
 <style>
