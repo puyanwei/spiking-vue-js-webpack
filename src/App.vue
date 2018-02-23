@@ -1,8 +1,8 @@
 <template>
     <div>
-      <app-header></app-header>
+      <app-header :title="title" v-on:changeTitle="updateTitle($event)"></app-header>
       <app-overwatch :characters="characters"></app-overwatch>
-      <app-footer></app-footer>
+      <app-footer :title="title"></app-footer>
     </div>
 </template>
 
@@ -49,8 +49,14 @@
             ability: "valkyrie",
             show: false
           }
-        ]
-      };
+        ],
+        title: "Overwatch Characters"
+      }
+    },
+    methods: {
+      updateTitle: function(updatedTitle) {
+        this.title = updatedTitle
+      }
     }
   };
 </script>

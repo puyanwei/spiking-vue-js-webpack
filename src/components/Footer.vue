@@ -1,12 +1,18 @@
 <template>
   <footer>
-<p>{{ practice }}</p>
+    <p>{{ title }}</p>
+    <p>{{ practice }}</p>
   </footer>
 
 </template>
 
 <script>
 export default {
+  props:{
+    title:{
+      type: String
+    }
+  },
   data() {
     return {
       practice: "This is a practice website for learning Vue.js"
