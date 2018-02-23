@@ -1,6 +1,5 @@
 import Vue from "vue";
 import App from "./App.vue"; // component template imported
-import StreetFighter from "./StreetFighter.vue";
 
 new Vue({
   el: "#app",
