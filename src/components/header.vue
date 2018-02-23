@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import { bus } from "../main"
 export default {
   props: {
     title: {
@@ -18,7 +19,9 @@ export default {
   },
   methods: {
     changeTitle: function(){
-      this.$emit("changeTitle", "Overwatch Ultimates")
+      // this.$emit("changeTitle", "Overwatch Ultimates")
+      this.title = "Overwatch Ultimates"
+      bus.$emit("titleChanged", "Overwatch Ultimates")
     }
   }
 };
