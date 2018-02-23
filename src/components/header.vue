@@ -6,18 +6,17 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        title: "Overwatch"
-      }
-
-    }
+export default {
+  data() {
+    return {
+      title: "Overwatch"
+    };
   }
+};
 </script>
 
 <style scoped>
-header{
+header {
   background: lightgreen;
   padding: 10px;
 }
