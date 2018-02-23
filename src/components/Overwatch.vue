@@ -11,10 +11,14 @@
 
 <script>
 export default {
-  props: ["characters"],// receiving prop
+  props: {
+    characters: {
+      type: Array,
+      required: true // prop received with verification checking!
+    }
+  },
   data() {
     return {
-
     };
   }
 };
