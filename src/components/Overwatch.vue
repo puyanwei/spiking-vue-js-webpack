@@ -26,19 +26,19 @@ export default {
     alert("beforeCreate")
   },
   created(){
-    alert("created")
+    alert("created") // Good for fetching data
   },
   beforeMount(){
     alert("beforeMount")
   },
   mounted(){
-    alert("mounted")
+    alert("mounted") // Good for manipulating the DOM
   },
   beforeUpdate(){
     alert("beforeUpdate")
   },
   updated(){
-    alert("updated")
+    alert("updated") // Good for manipulating the DOM
   }
 };
 </script>
