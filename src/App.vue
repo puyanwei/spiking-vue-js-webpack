@@ -1,8 +1,8 @@
 <template>
     <div>
       <form-helper>
-        <h2>I'm the slot title</h2>
-        <p>I'm the paragraph text for the slot</p>
+        <h2 slot="title">I'm the slot title</h2>
+        <p slot="text">I'm the paragraph text for the slot</p>
       </form-helper>
     </div>
 </template>
