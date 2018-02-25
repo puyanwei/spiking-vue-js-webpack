@@ -1,6 +1,8 @@
 <template>
     <div>
-
+      <component :is="component"></component>
+      <button @click="component = 'form-one'">Show Form One</button></button>
+      <button @click="component = 'form-two'">Show Form Two</button></button>
     </div>
 </template>
 
@@ -14,7 +16,9 @@ export default {
     "form-two": formTwo
   },
   data() {
-    return {};
+    return {
+      component: "form-two"
+    };
   },
   methods: {}
 };
