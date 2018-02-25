@@ -7,14 +7,14 @@
       </div>
 
       <div id="form-fields">
-        <slot name="form fields">
+        <slot name="form-fields"></slot>
       </div>
 
       <div id="form-controls">
-        <slot name="form controls">
+        <slot name="form-controls"></slot>
       </div>
 
-      <div id="useful-links"></div>
+      <div id="useful-links">
         <ul>
           <li><a href="#">Link 1</a></li>
           <li><a href="#">Link 2</a></li>
@@ -38,7 +38,5 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  color: red;
-}
+
 </style>;
